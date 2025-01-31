@@ -1,0 +1,66 @@
+/* Styles for brand and navigation buttons */
+.brand {
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styles for search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-icons, .right-icons {
+    display: flex;
+    align-items: center;
+}
+
+.left-icons i, .right-icons i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Styles for padding */
+.padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styles for textbook wrapper */
+.textbook-wrapper {
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

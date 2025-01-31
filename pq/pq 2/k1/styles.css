@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-size: 80%;
+    background-color:black;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 40px 80px;
+}
+header {
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand {
+    font-size: 24px;
+    align-items: 40px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8B0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-buttons { 
+    padding-left: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(107, 99, 99);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn i {
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(42, 41, 41);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    background-color: rgb(129, 125, 125);
+    border: none;
+    font-size: large;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.search-bar input::placeholder {
+    color:white;
+}
+
+.search-bar i {
+    color: #fff;
+}
+.slideshow-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    color: white;
+    background-color: rgb(42, 41, 41);
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color:maroon;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color:white;
+}
+
+.tweet-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tweet {
+    color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(42, 41, 41);
+
+}
+
+.tweet h3 {
+
+    margin: 0;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.tweet-actions i {
+    cursor: pointer;
+}

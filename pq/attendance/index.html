@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuadTech Pioneers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QUADTECH_PIONEERS</h1>
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="navigate('home')">Home</button>
+                <button class="nav-button" onclick="navigate('notes')">Notes</button>
+                <button class="nav-button" onclick="navigate('post')">Post</button>
+                <button class="nav-button" onclick="navigate('ai')">AI</button>
+                <button class="nav-button" onclick="navigate('profile')">Profile</button>
+            </div>
+        </header>
+        <div class="buttons">
+            <button onclick="showMaintenanceMessage()">Time Table</button>
+            <button onclick="showMaintenanceMessage()">Remainder</button>
+        </div>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Class cancelled</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Subject - 1</td>
+                    <td><button class="present" onclick="markAttendance(this, 'present')">🔥 5</button></td>
+                    <td><button class="absent" onclick="markAttendance(this, 'absent')">💧 2</button></td>
+                    <td><button class="cancelled" onclick="markAttendance(this, 'cancelled')">🚫 0</button></td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Subject - 2</td>
+                    <td><button class="present" onclick="markAttendance(this, 'present')">🔥 5</button></td>
+                    <td><button class="absent" onclick="markAttendance(this, 'absent')">💧 2</button></td>
+                    <td><button class="cancelled" onclick="markAttendance(this, 'cancelled')">🚫 0</button></td>
+                    <td>85%</td>
+                </tr>
+                <!-- Additional subjects can be added dynamically -->
+            </tbody>
+        </table>
+        <button onclick="addSubject()">Add Subject</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
